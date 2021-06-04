@@ -2,10 +2,10 @@
 
 This is the repository documenting the paper
 [FaVIQ: Fact Verification from Information seeking Questions]()
-by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, and Hannaneh Hajishirzi.
+by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
-* [Website]()
-* Read the [paper]()
+* Visit the website [Website]()
+* Read the website [paper]()
 * Download the dataset: [FaVIQ A set]() / [FaVIQ D set]()
 
 ## Contents
@@ -15,54 +15,54 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, and Hannaneh Hajishir
     * [Additional resources](#additional-resources)
 2. [Citation](#citation)
 
-### AmbigNQ
+### FaVIQ
 
-We provide two distributions of our new dataset AmbigNQ: a `full` version with all annotation metadata
-and a `light` version with only inputs and outputs.
+FaVIQ consists of the A set and the D set where the former is constructed based on AmbigQA and the latter from NQ.
 
-The full version contains
-- train.json (47M)
-- dev.json (17M)
+The A set contains
+- train.jsonl ()
+- dev.jsonl ()
 
-The light version contains
-- train_light.json (3.3M)
-- dev_light.json (977K)
+The D set contains
+- train.jsonl ()
+- dev.jsonl ()
+- test.jsonl ()
 
-`train.json` and `dev.json` files contains a list of dictionary that represents a single datapoint, with the following keys
+`{train,dev,test}.jsonl` files contains a list of dictionary that represents a single instance, with the following keys
 
-- `id` (string): an identifier for the question, consistent with the original NQ dataset.
-- `question` (string): a question. This is identical to the question in the original NQ except we postprocess the string to start uppercase and end with a question mark.
-- `annotations` (a list of dictionaries): a list of all acceptable outputs, where each output is a dictionary that represents either a single answer or multiple question-answer pairs.
-    - `type`: `singleAnswer` or `multipleQAs`
-    - (If `type` is `singleAnswer`) `answer`: a list of strings that are all acceptable answer texts
-    - (If `type` is `multipleQAs`) `qaPairs`: a list of dictionaries with `question` and `answer`. `question` is a string, and `answer` is a list of strings that are all acceptable answer texts
-- `viewed_doc_titles` (a list of strings): a list of titles of Wikipedia pages viewed by crowdworkers during annotations. This is an underestimate, since Wikipedia pages viewed through hyperlinks are not included. Note that this should not be the input to a system. It is fine to use it as extra supervision, but please keep in mind that it is an underestimate.
-- `used_queries` (a list of dictionaries): a list of dictionaries containing the search queries and results that were used by crowdworkers during annotations. Each dictionary contains `query` (a string) and `results` (a list of dictionaries containing `title` and `snippet`). Search results are obtained through the Google Search API restricted to Wikipedia (details in the paper). Note that this should not be the input to a system. It is fine to use it as extra supervision.
-- `nq_answer` (a list of strings): the list of annotated answers in the original NQ.
-- `nq_doc_title` (string): an associated Wikipedia page title in the original NQ.
+- `id` (string): an identifier for the unique claim.
+- `claim` (string): a claim. the claims are all lower cased since the questions from NQ-Open and AmbigQA are all low-cased.
+- `label` (string): factuality of the claim which is either 'SUPPORTS' or 'REFUTES'.
+- `positive_evidence` (dictionary): the top passage that contains the answer to the original question that is retrieved form querying original question (which is used to generate the claim during the data creation process) to TF-IDF.
+   - id (string): id of the positive passage.
+   - title (string): title of the positive passage.
+   - text (string): text of the positive passage.
+- `positive_evidence` (dictionary): the top passage that does not contain the answer to the original question that is retrieved form querying original question (which is used to generate the claim during the data creation process) to TF-IDF.
+   - id (string): id of the negative passage.
+   - title (string): title of the negative passage.
+   - text (string): text of the negative passage.
 
-`{train|dev}_light.json` are formatted the same way, but only contain `id`, `question` and `annotations`.
+### Resources
 
-### NQ-open
-
-We release our split of NQ-open, for comparison and use as weak supervision:
-
-- nqopen-train.json (9.7M)
-- nqopen-dev.json (1.1M)
-- nqopen-test.json (489K)
-
-Each file contains a list of dictionaries representing a single datapoint, with the following keys
-
-- `id` (string): an identifier that is consistent with the original NQ.
-- `question` (string): a question.
-- `answer` (a list of strings): a list of acceptable answer texts.
-
+- `docs.db`: sqlite db that is consistent with [DrQA](https://github.com/facebookresearch/DrQA); containing plain text only, no disambiguation pages
 
 ## Citation
 
-If you find the AmbigQA task or AmbigNQ dataset useful, please cite our paper:
+If you find the FaVIQ dataset useful, please cite our paper:
+
 ```
-@inproceedings{ min2020ambigqa,
+@inproceedings{,
+    title={FaVIQ: Fact Verification from Information seeking Questions},
+    author={ Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi },
+    year={2021}
+}
+```
+
+Please also make sure to credit and cite the creators of AmbigQA and Natural Questions,
+the dataset which we built ours off of:
+
+```
+@inproceedings{min2020ambigqa,
     title={ {A}mbig{QA}: Answering Ambiguous Open-domain Questions },
     author={ Min, Sewon and Michael, Julian and Hajishirzi, Hannaneh and Zettlemoyer, Luke },
     booktitle={ EMNLP },
@@ -70,8 +70,6 @@ If you find the AmbigQA task or AmbigNQ dataset useful, please cite our paper:
 }
 ```
 
-Please also make sure to credit and cite the creators of Natural Questions,
-the dataset which we built ours off of:
 ```
 @article{ kwiatkowski2019natural,
   title={ Natural questions: a benchmark for question answering research},
@@ -80,13 +78,3 @@ the dataset which we built ours off of:
   year={ 2019 }
 }
 ```
-
-
-## Dataset Contents
-
-
-### Additional resources
-
-- `docs.db`: sqlite db that is consistent with [DrQA](https://github.com/facebookresearch/DrQA); containing plain text only, no disambiguation pages
-- `docs-html.db`: sqlite db that is consistent with [DrQA](https://github.com/facebookresearch/DrQA), containing html, no disambiguation pages
-- (Coming Soon!) Top 100 Wikipedia passages retrieved from Dense Passage Retrieval
