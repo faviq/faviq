@@ -17,9 +17,9 @@ FaVIQ consists of **A set** and **D set** where the former is constructed based 
 
 | Split\Data  | A set       | D set       |
 | ----------- | ----------- | ----------- |
-| Train       | 17,008 (MB) |140,977 (MB) |
-| Dev         |  4,260 (MB) | 15,566 (MB) |
-| Test        |  4,688 (MB) | 5,877 (MB)  |
+| Train       | 17,008      |140,977      |
+| Dev         |  4,260      | 15,566      |
+| Test        |  4,688      | 5,877       |
 
 
 The A set contains
