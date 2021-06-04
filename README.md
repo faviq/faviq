@@ -18,7 +18,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 ### Data
 
-FaVIQ consists of **A set** and **D set** where the former is constructed based on AmbigQA and the latter is from Natural Questions. We hide the test set from the A set since the test set of AmbigQA is also hidden.
+FaVIQ consists of **A set** and **D set** where the former is constructed based on AmbigQA and the latter is from Natural Questions. We hide the test set from the A set since the test set of AmbigQA (which we build A set upon) is hidden.
 
 The A set contains
 - train.jsonl ()
@@ -34,18 +34,18 @@ The D set contains
 - `id` (string): an identifier for the unique claim.
 - `claim` (string): a claim. the claims are all lowercased since the questions from NQ-Open and AmbigQA are all low-cased.
 - `label` (string): factuality of the claim which is either 'SUPPORTS' or 'REFUTES'.
-- `positive_evidence` (dictionary): the top passage that contains the answer to the original question that is retrieved from querying the original question (which is used to generate the claim during the data creation process) to TF-IDF.
+- `positive_evidence` (dictionary): the top passage that contains the answer to the original question that is retrieved from querying the original question to TF-IDF.
    - id (string): id of the positive passage.
    - title (string): title of the positive passage.
    - text (string): text of the positive passage.
-- `positive_evidence` (dictionary): the top passage that does not contain the answer to the original question that is retrieved from querying the original question (which is used to generate the claim during the data creation process) to TF-IDF.
+- `positive_evidence` (dictionary): the top passage that does not contain the answer to the original question that is retrieved from querying the original question to TF-IDF.
    - id (string): id of the negative passage.
    - title (string): title of the negative passage.
    - text (string): text of the negative passage.
 
 ### Resource
 
-- `wikipedia_20190801.jsonl`: wikipedia db in jsonl format; containing the passages (~26M) with title and text concatenated.
+- `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with passage id, title, and text.
 
 ## Citation
 
