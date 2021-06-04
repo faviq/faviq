@@ -16,6 +16,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 FaVIQ consists of **A set** and **D set** where the former is constructed based on AmbigQA and the latter is from Natural Questions. We hide the test set from the A set since the test set of AmbigQA (which we build A set upon) is hidden. For obtaining the test set, please contact us via email.
 
 | Split \ Data  | A set       | D set      |
+| ----------- | ----------- | ----------- |
 | Train       | 17,008      |140,977      |
 | Dev         |  4,260      | 15,566      |
 | Test        |  4,688      | 5,877       |
