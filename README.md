@@ -40,7 +40,7 @@ The D set contains
 
 ### Resource
 
-- `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with passage id, title, and text.
+- `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with passage id, title, and text. We take the plain text and lists provided by [KILT](https://arxiv.org/abs/2009.02252) and created a collection of passages where each passage has up to 100 tokens.
 
 ## Citation
 
