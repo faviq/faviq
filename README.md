@@ -7,7 +7,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 * Checkout the [website]()
 * Read the [paper]()
 * Download the FaVIQ: [A set]() / [D set]()
-* Download the [wikipedia dump file(2019.08.01)]()
+* Download the [wikipedia dump file (2019.08.01)]()
 
 ## Dataset
 
