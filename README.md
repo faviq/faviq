@@ -8,12 +8,6 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 * Read the [paper]()
 * Download the FaVIQ: [A set]() / [D set]()
 
-## Contents
-1. [Dataset](#Dataset)
-    * [Data](#Data)
-    * [Resources](#Resources)
-2. [Citation](#citation)
-
 ## Dataset
 
 ### Data
@@ -35,11 +29,11 @@ The D set contains
 - `claim` (string): a claim. the claims are all lowercased since the questions from NQ-Open and AmbigQA are all low-cased.
 - `label` (string): factuality of the claim which is either 'SUPPORTS' or 'REFUTES'.
 - `positive_evidence` (dictionary): the top passage that contains the answer to the original question that is retrieved from querying the original question to TF-IDF.
-   - id (string): id of the positive passage.
+   - id (string): id of the positive passage mapped to the wikipedia dump file in # Resource.
    - title (string): title of the positive passage.
    - text (string): text of the positive passage.
 - `negative_evidence` (dictionary): the top passage that does not contain the answer to the original question that is retrieved from querying the original question to TF-IDF.
-   - id (string): id of the negative passage.
+   - id (string): id of the negative passage mapped to the wikipedia dump file in # Resource.
    - title (string): title of the negative passage.
    - text (string): text of the negative passage.
 
