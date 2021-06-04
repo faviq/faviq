@@ -23,6 +23,8 @@ FaVIQ consists of **A set** and **D set** where the former is constructed based 
 | Dev         |  4,260      | 15,566      |
 | Test        |  4,688      | 5,877       |
 
+#### Contents
+
 `{train,dev,test}.jsonl` files contains a list of dictionary that represents a single instance, with the following keys
 
 - `id` (string): an identifier for the unique claim.
