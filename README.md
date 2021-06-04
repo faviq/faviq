@@ -38,7 +38,7 @@ The D set contains
    - id (string): id of the positive passage.
    - title (string): title of the positive passage.
    - text (string): text of the positive passage.
-- `positive_evidence` (dictionary): the top passage that does not contain the answer to the original question that is retrieved from querying the original question to TF-IDF.
+- `negative_evidence` (dictionary): the top passage that does not contain the answer to the original question that is retrieved from querying the original question to TF-IDF.
    - id (string): id of the negative passage.
    - title (string): title of the negative passage.
    - text (string): text of the negative passage.
@@ -58,7 +58,6 @@ If you find the FaVIQ dataset useful, please cite our paper:
     year={2021}
 }
 ```
-
 Please also make sure to credit and cite the creators of AmbigQA and Natural Questions,
 the datasets which we built ours off of:
 
