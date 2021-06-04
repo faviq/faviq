@@ -10,7 +10,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 ## Contents
 1. [Dataset](#Dataset)
-    * [FaVIQ](#Data)
+    * [Data](#Data)
     * [Resources](#Resources)
 2. [Citation](#citation)
 
