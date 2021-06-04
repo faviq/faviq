@@ -13,7 +13,14 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 ### Data
 
-FaVIQ consists of **A set** and **D set** where the former is constructed based on AmbigQA and the latter is from Natural Questions. We hide the test set from the A set since the test set of AmbigQA (which we build A set upon) is hidden.
+FaVIQ consists of **A set** and **D set** where the former is constructed based on AmbigQA and the latter is from Natural Questions. We hide the test set from the A set since the test set of AmbigQA (which we build A set upon) is hidden. For obtaining the test set, please contact us via email.
+
+| Split\Data  | A set       | D set       |
+| ----------- | ----------- | ----------- |
+| Train       | 17,008 (MB) |140,977 (MB) |
+| Dev         |  4,260 (MB) | 15,566 (MB) |
+| Test        |  4,688 (MB) | 5,877 (MB)  |
+
 
 The A set contains
 - train.jsonl ()
@@ -73,3 +80,7 @@ the datasets which we built ours off of:
   year={ 2019 }
 }
 ```
+
+## Contact
+
+Please contact Jungsoo Park `jungsoopark.1993@gmail.com` or Sewon Min `sewon@cs.washington.edu` if you have any questions.
