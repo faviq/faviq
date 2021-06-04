@@ -10,13 +10,13 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 ## Contents
 1. [Dataset](#Dataset)
-    * [FaVIQ](#FaVIQ)
+    * [FaVIQ](#Data)
     * [Resources](#Resources)
 2. [Citation](#citation)
 
 ## Dataset
 
-### FaVIQ
+### Data
 
 FaVIQ consists of the A set and the D set where the former is constructed based on AmbigQA and the latter from NQ.
 
