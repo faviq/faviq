@@ -1,6 +1,6 @@
-# FaVIQ README
+# FaVIQ
 
-This is the repository documenting the paper
+This repository contains the data and code for the paper
 [FaVIQ: Fact Verification from Information seeking Questions]()
 by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
