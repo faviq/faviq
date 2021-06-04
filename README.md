@@ -43,7 +43,7 @@ The D set contains
    - title (string): title of the negative passage.
    - text (string): text of the negative passage.
 
-### Resources
+### Resource
 
 - `wikipedia_20190801.jsonl`: wikipedia db in jsonl format; containing the passages (~26M) with title and text concatenated.
 
