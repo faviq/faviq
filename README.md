@@ -6,7 +6,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 * Checkout the [website]()
 * Read the [paper]()
-* Download the dataset: [FaVIQ A set]() / [FaVIQ D set]()
+* Download the FaVIQ: [A set]() / [D set]()
 
 ## Contents
 1. [Dataset](#Dataset)
@@ -18,7 +18,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 ### Data
 
-FaVIQ consists of the A set and the D set where the former is constructed based on AmbigQA and the latter from NQ.
+FaVIQ consists of **A set** and **D set** where the former is constructed based on AmbigQA and the latter is from Natural Questions. We hide the test set from the A set since the test set of AmbigQA is also hidden.
 
 The A set contains
 - train.jsonl ()
@@ -32,20 +32,20 @@ The D set contains
 `{train,dev,test}.jsonl` files contains a list of dictionary that represents a single instance, with the following keys
 
 - `id` (string): an identifier for the unique claim.
-- `claim` (string): a claim. the claims are all lower cased since the questions from NQ-Open and AmbigQA are all low-cased.
+- `claim` (string): a claim. the claims are all lowercased since the questions from NQ-Open and AmbigQA are all low-cased.
 - `label` (string): factuality of the claim which is either 'SUPPORTS' or 'REFUTES'.
-- `positive_evidence` (dictionary): the top passage that contains the answer to the original question that is retrieved form querying original question (which is used to generate the claim during the data creation process) to TF-IDF.
+- `positive_evidence` (dictionary): the top passage that contains the answer to the original question that is retrieved from querying the original question (which is used to generate the claim during the data creation process) to TF-IDF.
    - id (string): id of the positive passage.
    - title (string): title of the positive passage.
    - text (string): text of the positive passage.
-- `positive_evidence` (dictionary): the top passage that does not contain the answer to the original question that is retrieved form querying original question (which is used to generate the claim during the data creation process) to TF-IDF.
+- `positive_evidence` (dictionary): the top passage that does not contain the answer to the original question that is retrieved from querying the original question (which is used to generate the claim during the data creation process) to TF-IDF.
    - id (string): id of the negative passage.
    - title (string): title of the negative passage.
    - text (string): text of the negative passage.
 
 ### Resources
 
-- `docs.db`: sqlite db that is consistent with [DrQA](https://github.com/facebookresearch/DrQA); containing plain text only, no disambiguation pages
+- `wikipedia_20190801.jsonl`: wikipedia db in jsonl format; containing the passages (~26M) with title and text concatenated.
 
 ## Citation
 
