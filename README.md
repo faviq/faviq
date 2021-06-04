@@ -51,8 +51,8 @@ The D set contains
 
 If you find the FaVIQ dataset useful, please cite our paper:
 
-```
-@inproceedings{,
+```bibtex
+@article{,
     title={FaVIQ: Fact Verification from Information seeking Questions},
     author={ Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi },
     year={2021}
@@ -60,9 +60,9 @@ If you find the FaVIQ dataset useful, please cite our paper:
 ```
 
 Please also make sure to credit and cite the creators of AmbigQA and Natural Questions,
-the dataset which we built ours off of:
+the datasets which we built ours off of:
 
-```
+```bibtex
 @inproceedings{min2020ambigqa,
     title={ {A}mbig{QA}: Answering Ambiguous Open-domain Questions },
     author={ Min, Sewon and Michael, Julian and Hajishirzi, Hannaneh and Zettlemoyer, Luke },
@@ -71,7 +71,7 @@ the dataset which we built ours off of:
 }
 ```
 
-```
+```bibtex
 @article{ kwiatkowski2019natural,
   title={ Natural questions: a benchmark for question answering research},
   author={ Kwiatkowski, Tom and Palomaki, Jennimaria and Redfield, Olivia and Collins, Michael and Parikh, Ankur and Alberti, Chris and Epstein, Danielle and Polosukhin, Illia and Devlin, Jacob and Lee, Kenton and others },
