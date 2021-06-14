@@ -18,7 +18,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 #### Statistics
 
-| Split \ Data  | A set       | D set      |
+| Split \ Data  | A set       | R set      |
 | ----------- | ----------- | ----------- |
 | Train       | 17,008      |140,977      |
 | Dev         |  4,260      | 15,566      |
