@@ -7,14 +7,14 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 * Checkout the [website]()
 * Read the [paper]()
-* Download the \textsc{FaVIQ}: [A set]() / [R set]()
+* Download the <span style="font-variant:small-caps;">FaVIQ</span>: [A set]() / [R set]()
 * Download the [wikipedia dump file (2019.08.01)]()
 
 ## Dataset
 
 ### Data
 
-\textsc{FaVIQ} consists of **A set** and **R set** where the former is constructed based on [AmbigQA](https://nlp.cs.washington.edu/ambigqa/) and the latter is from [Natural Questions](https://ai.google.com/research/NaturalQuestions). We hide the test set from the A set since the test set of AmbigQA (which we build A set upon) is hidden. For obtaining the test set, please contact us via email.
+<span style="font-variant:small-caps;">FaVIQ</span> consists of **A set** and **R set** where the former is constructed based on [AmbigQA](https://nlp.cs.washington.edu/ambigqa/) and the latter is from [Natural Questions](https://ai.google.com/research/NaturalQuestions). We hide the test set from the A set since the test set of AmbigQA (which we build A set upon) is hidden. For obtaining the test set, please contact us via email.
 
 #### Statistics
 
@@ -42,11 +42,11 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 ### Resource
 
-- `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with keys of passage id, title, and text. We take the plain text and lists provided by [KILT](https://arxiv.org/abs/2009.02252) and created a collection of passages where each passage has approximately 100 tokens. Note that for training baselines ([FEVER](https://fever.ai/) and \textsc{FaVIQ}) in the paper, we concatenated the title with the passage and regarded it as the passage.
+- `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with keys of passage id, title, and text. We take the plain text and lists provided by [KILT](https://arxiv.org/abs/2009.02252) and created a collection of passages where each passage has approximately 100 tokens. Note that for training baselines ([FEVER](https://fever.ai/) and <span style="font-variant:small-caps;">FaVIQ</span>) in the paper, we concatenated the title with the passage and regarded it as the passage.
 
 ## Citation
 
-If you find the \textsc{FaVIQ} dataset useful, please cite our paper:
+If you find the <span style="font-variant:small-caps;">FaVIQ</span> dataset useful, please cite our paper:
 
 ```bibtex
 @article{,
