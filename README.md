@@ -1,7 +1,7 @@
 <div>
-   <span style="font-variant:small-caps;"> 
+   <a style="font-variant:small-caps;"> 
       FaVIQ
-   </span>
+   </a>
 </div>
    
 This repository contains the data and code for the paper
