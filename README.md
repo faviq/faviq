@@ -14,7 +14,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 ### Data
 
-<span style="font-variant:small-caps;">FaVIQ</span> consists of **A set**(13MB) and **R set**(196MB) where the former is constructed based on [AmbigQA](https://nlp.cs.washington.edu/ambigqa/) and the latter is from [Natural Questions](https://ai.google.com/research/NaturalQuestions). We hide the test set from the A set since the test set of AmbigQA (which we build A set upon) is hidden. For obtaining the test set, please contact us via email.
+<span style="font-variant:small-caps;">FaVIQ</span> consists of **A set** (13MB) and **R set** (196MB) where the former is constructed based on [AmbigQA](https://nlp.cs.washington.edu/ambigqa/) and the latter is from [Natural Questions](https://ai.google.com/research/NaturalQuestions). We hide the test set from the A set since the test set of AmbigQA (which we build A set upon) is hidden. For obtaining the test set, please contact us via email.
 
 #### Statistics
 
