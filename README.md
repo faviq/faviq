@@ -1,4 +1,4 @@
-# $<span style="font-variant:small-caps;">FaVIQ</span>$
+# $\textsc{FaVIQ}$
 
 This repository contains the data and code for the paper
 [\textsc{FaVIQ}: Fact Verification from Information seeking Questions]()
