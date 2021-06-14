@@ -1,6 +1,8 @@
 # <span style="font-variant:small-caps;">FaVIQ</span>
 [Small caps]{style="font-variant:small-caps"}
+<span style="font-variant:small-caps;">Small caps</span>
    
+  
 This repository contains the data and code for the paper
 [<span style="font-variant:small-caps;">FaVIQ</span>: Fact Verification from Information seeking Questions]()
 by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
