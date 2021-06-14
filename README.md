@@ -3,6 +3,8 @@
 <div>
 <span style="font-variant:small-caps;">FaVIQ</span>
 </div>
+
+<div class="tip" markdown="1">Have **fun!**</div>
    
 This repository contains the data and code for the paper
 [\textsc{FaVIQ}: Fact Verification from Information seeking Questions]()
