@@ -42,7 +42,7 @@ by Jungsoo Park, Sewon Min, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi.
 
 ### Resource
 
-- `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with keys of passage id, title, and text. We take the plain text and lists provided by [KILT](https://arxiv.org/abs/2009.02252) and created a collection of passages where each passage has approximately 100 tokens. Note that for training baselines ([FEVER](https://fever.ai/) and <span style="font-variant:small-caps;">FaVIQ</span>) in the paper, we concatenated the title with the passage and regarded it as the passage.
+- `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with keys of passage id, title, and text. We take the plain text and lists provided by [KILT](https://ai.facebook.com/tools/kilt/) and created a collection of passages where each passage has approximately 100 tokens. Note that for training baselines ([FEVER](https://fever.ai/) and <span style="font-variant:small-caps;">FaVIQ</span>) in the paper, we concatenated the title with the passage and regarded it as the passage.
 
 ## Citation
 
