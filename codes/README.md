@@ -34,7 +34,6 @@ The model that we report on the paper was trained with `train_batch_size=32` usi
 CUDA=0,1,2,3,4,5,6,7
 TRAIN_DIR=data/faviq_r_set/train.jsonl,data/faviq_a_set/train.jsonl
 DEV_DIR=data/faviq_r_set/dev.jsonl,data/faviq_a_set/dev.jsonl
-OUTPUT_DIR=out/bart_large_dpr
 RETRIEVAL_DIR=data/dpr/faviq_r_set/,data/dpr/faviq_a_set/
 WIKI_DB=data/wikipedia_20190801.db
 OUTPUT_DIR=out/bart_large_dpr
