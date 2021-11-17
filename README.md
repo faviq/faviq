@@ -11,6 +11,8 @@ This repository contains the data and code for our paper:
 * Download the <span style="font-variant:small-caps;">FaVIQ in fact correction task format</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_a_set.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_r_set.zip)
 
 
+**Update (Nov 2021)**: We updated the negative silver evidence for the refute samples. (TF-IDF & DPR predictions will be ready soon accordingly)
+
 ## Dataset
 
 ### Data
