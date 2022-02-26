@@ -7,6 +7,7 @@ This repository contains the data and code for our paper:
 * Checkout the [website](https://faviq.github.io)
 * Read the [paper](https://arxiv.org/pdf/2107.02153.pdf)
 * Download the <span style="font-variant:small-caps;">FaVIQ</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/faviq_a_set_v1.2.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/faviq_r_set_v1.2.zip)
+* Download the <span style="font-variant:small-caps;">FaVIQ retrieval predictions</span>: [TF_IDF](https://docs.google.com/uc?export=download&id=1tZrj0y-0FS6T7o4oLfBk8K-Bt_ZUvzTz) / [DPR](https://docs.google.com/uc?export=download&id=1_h3OpuqvUVEuadH2F0my7W6nJfjXK4vy)
 * Download the [wikipedia dump file (2019.08.01)](https://nlp.cs.washington.edu/ambigqa/data/wikipedia_20190801.jsonl)
 * Download the <span style="font-variant:small-caps;">FaVIQ in fact correction task format</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_a_set.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_r_set.zip)
 
