@@ -9,7 +9,7 @@ This repository contains the data and code for our paper:
 * Download the <span style="font-variant:small-caps;">FaVIQ</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/faviq_a_set_v1.2.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/faviq_r_set_v1.2.zip)
 * Download the [wikipedia dump file (2019.08.01)](https://nlp.cs.washington.edu/ambigqa/data/wikipedia_20190801.jsonl)
 * Download the [wikipedia dump file (2019.08.01) in DB format](https://drive.google.com/file/d/1g0NA9_j1iDC8_E1zbW9IanzZaC9K1DAc/view?usp=sharing)
-* Download the <span style="font-variant:small-caps;">FaVIQ retrieval predictions</span>: [TF_IDF](https://docs.google.com/uc?export=download&id=1tZrj0y-0FS6T7o4oLfBk8K-Bt_ZUvzTz) / [DPR](https://docs.google.com/uc?export=download&id=1_h3OpuqvUVEuadH2F0my7W6nJfjXK4vy)
+* Download the <span style="font-variant:small-caps;">FaVIQ retrieval predictions</span>: [TF_IDF](https://drive.google.com/file/d/1tZrj0y-0FS6T7o4oLfBk8K-Bt_ZUvzTz/view?usp=sharing) / [DPR](https://drive.google.com/file/d/1_h3OpuqvUVEuadH2F0my7W6nJfjXK4vy/view?usp=sharing)
 * Download the <span style="font-variant:small-caps;">FaVIQ in closed domain format (retrieval predictions augmented) </span>: [A set](https://drive.google.com/file/d/1_Zg5vw8jcfLHhoLuI6q_j9JLXl_5k4oD/view?usp=sharing) / [R set](https://drive.google.com/file/d/1ca0pokFxcUwS1VcYteveFRthL6kfpLDM/view?usp=sharing)
 * Download the <span style="font-variant:small-caps;">FaVIQ in fact correction task format</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_a_set.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_r_set.zip)
 
