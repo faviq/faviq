@@ -64,9 +64,11 @@ In order to obtain the test data, please email Jungsoo Park `jungsoopark.1993@gm
 
 - `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with keys of passage id, title, and text. We take the plain text and lists provided by [KILT](https://ai.facebook.com/tools/kilt/) and created a collection of passages where each passage has approximately 100 tokens. Note that for training baselines ([FEVER](https://fever.ai/) and <span style="font-variant:small-caps;">FaVIQ</span>) in the paper, we concatenated the title with the passage and regarded it as the passage.
 
-- `wikipedia_20190801.db`: wikipedia database in sqlite format; containing the passages (~26M) with keys of passage id and texts. Note that we concatenated the title with the passage and use it as the text (passage).
+- `wikipedia_20190801.db`: wikipedia database in sqlite format; containing the passages (~26M) with keys of passage id and values as passages. Note that we concatenated the title with the passage from Wikipedia and use it as the passage.
  
-- `FaVIQ retrieval predictions`: TF-IDF and DPR predictions of FaVIQ dataset. The predictions are retrieved passages' indexes from Wikipedia Database (sqlite format).
+- `FaVIQ retrieval predictions`: TF-IDF and DPR predictions of FaVIQ dataset. The predictions are retrieved passages' indexes from Wikipedia database (sqlite format).
+
+- `FaVIQ in closed domain format (retrieval predictions augmented)`: FaVIQ dataset with retrieval prediction augmented. Top-3 retrieval predictions from TF-IDF and DPR are augmented in the original FaVIQ dataset in text format. The retrieved texts are in `tf_idf_evidence`, `dpr_evidence` as a list format (containing texts).
  
 - `fact_correction_{a_set, r_set}.zip`: FaVIQ modified to fact correction task format; containing the instances with keys of input(refuted claim), and output(a list of corrected claims accordingly). We release the resource to aid in future works studying the fact correction, a task recently studied in this [paper](https://arxiv.org/pdf/2012.15788.pdf).
 ## Citation
