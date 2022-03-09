@@ -25,7 +25,7 @@ bash download_wiki.sh
 Note that we concatenated the title with the passage and regarded it as the passage.
 
 
-## Retrieving Wikipedia documents using SQLite
+## Querying Wikipedia documents database using SQLite
 
 We provide a code snippet for retrieving Wikipedia documents (in text format) using retrieval predictions and Wikipedia database.
 You need to download both files from the above section. Note that this retrieval section (using SQLite) is already implemented in 
