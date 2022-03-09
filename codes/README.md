@@ -76,7 +76,7 @@ CUDA_VISIBLE_DEVICES=${CUDA} python cli.py \
 	--max_output_length 5 \
 	--model_name 'facebook/bart-large' \
 	--retrieved_pred_dir ${RETRIEVAL_DIR} \
-    --wiki_db_file ${WIKI_DB} 
+    	--wiki_db_file ${WIKI_DB} 
 ```
 
 ## Evaluation
@@ -109,15 +109,15 @@ CUDA_VISIBLE_DEVICES=${CUDA} python cli.py \
 	--max_output_length 5 \
 	--model_name 'facebook/bart-large' \
 	--retrieved_pred_dir ${RETRIEVAL_DIR} \
-    --wiki_db_file ${WIKI_DB}
+    	--wiki_db_file ${WIKI_DB}
 ```
 
 ## Citations
 ```bibtex
-@article{ park2021faviq,
+@inproceedings{ park2021faviq,
     title={ {F}a{VIQ}: Fact Verification from Information seeking Questions },
     author={ Park, Jungsoo and Min, Sewon and Kang, Jaewoo and Zettlemoyer, Luke and Hajishirzi, Hannaneh },
     year={ 2021 },
-    journal={arXiv preprint arXiv:2107.02153}
+    booktitle={ ACL },
 }
 ```
