@@ -12,7 +12,7 @@ $ pip install transformers==4.3.0
 ```
 Note that Pytorch has to be installed depending on the version of CUDA.
 
-## Wikipedia Passage Retrieval
+## Wikipedia passage retrieval
 
 For training models on the fact verification task, you will need the Wikipedia knowledge source and relevant passages retrieved from it.
 You can download the Wikipedia passage file in sqlite3 format and retrieved passages' indexes (using TF_IDF or DPR) by running the code below.
