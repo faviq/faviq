@@ -24,6 +24,33 @@ bash download_wiki.sh
 
 Note that we concatenated the title with the passage and regarded it as the passage.
 
+
+## Retrieving Wikipedia documents using SQLite
+
+We provide a code snippet for retrieving Wikipedia documents (in text format) using retrieval predictions and Wikipedia database.
+You need to download both files from the above section. Note that this retrieval section (using SQLite) is already implemented in 
+the [data.py](https://github.com/faviq/faviq/blob/main/codes/data.py#L116-L125), but we provide the code snippet for convenience.
+
+
+```python
+from utils import DocDB
+
+top_k_passages = 3 # top k passages you want to use
+wiki_db_file = PATH_TO_WIKIPEDIA_DB_FILE_PATH
+retrieved_idxs = RETRIEVAL_PREDICTIONS_FILE # loaded with json.load()
+
+db = DocDB(wiki_db_file)
+
+retrieval_documents = []
+for instance_retrieved_idxs in retrieved_idxs:
+    instance_retrieval_documents = []
+    for topk_passages_pred in instance_retrieved_idxs[:top_k_passages]:
+        text = db.get_doc_text(topk_passages_pred)
+        instance_retrieval_documents.append(text)
+    retrieval_documents.append(instance_retrieval_documents)
+```
+
+
 ## Train
 
 The following example fine-tunes DPR + BART-Large model on FaVIQ (A set and R set).
