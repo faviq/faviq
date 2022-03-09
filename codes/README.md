@@ -117,7 +117,7 @@ CUDA_VISIBLE_DEVICES=${CUDA} python cli.py \
 @inproceedings{ park2021faviq,
     title={ {F}a{VIQ}: Fact Verification from Information seeking Questions },
     author={ Park, Jungsoo and Min, Sewon and Kang, Jaewoo and Zettlemoyer, Luke and Hajishirzi, Hannaneh },
-    year={ 2021 },
+    year={ 2022 },
     booktitle={ ACL },
 }
 ```
