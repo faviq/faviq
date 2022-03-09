@@ -10,10 +10,9 @@ This repository contains the data and code for our paper:
 * Download the [wikipedia dump file (2019.08.01)](https://nlp.cs.washington.edu/ambigqa/data/wikipedia_20190801.jsonl)
 * Download the [wikipedia dump file (2019.08.01) in sqlite DB format](https://drive.google.com/file/d/1g0NA9_j1iDC8_E1zbW9IanzZaC9K1DAc/view?usp=sharing)
 * Download the <span style="font-variant:small-caps;">FaVIQ retrieval predictions</span>: [TF_IDF](https://drive.google.com/file/d/1tZrj0y-0FS6T7o4oLfBk8K-Bt_ZUvzTz/view?usp=sharing) / [DPR](https://drive.google.com/file/d/1_h3OpuqvUVEuadH2F0my7W6nJfjXK4vy/view?usp=sharing)
-* Download the <span style="font-variant:small-caps;">FaVIQ in closed domain format (retrieval predictions augmented) </span>: [A set](https://drive.google.com/file/d/1_Zg5vw8jcfLHhoLuI6q_j9JLXl_5k4oD/view?usp=sharing) / [R set](https://drive.google.com/file/d/1ca0pokFxcUwS1VcYteveFRthL6kfpLDM/view?usp=sharing)
 * Download the <span style="font-variant:small-caps;">FaVIQ in fact correction task format</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_a_set.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_r_set.zip)
 
-**Update (Fev 2022)**: We provide FaVIQ in closed domain format (retrieval predictions augmented)  
+**Update (Fev 2022)**: Our paper got accepted to the ACL 2022 main conference.
 **Update (Nov 2021)**: We updated the positive/negative silver evidence for the refute samples. 
 
 ## Dataset
@@ -67,8 +66,6 @@ In order to obtain the test data, please email Jungsoo Park `jungsoopark.1993@gm
 - `wikipedia_20190801.db`: wikipedia database in sqlite format; containing the passages (~26M) with keys of passage id and values as passages. Note that we concatenated the title with the passage from Wikipedia and use it as the passage.
  
 - `FaVIQ retrieval predictions`: TF-IDF and DPR predictions of FaVIQ dataset. The predictions are retrieved passages' indexes from Wikipedia database (sqlite format).
-
-- `FaVIQ in closed domain format (retrieval predictions augmented)`: FaVIQ dataset with retrieval prediction augmented. Top-3 retrieval predictions from TF-IDF and DPR are augmented in the original FaVIQ dataset in text format. The retrieved texts are in `tf_idf_evidence`, `dpr_evidence` as a list format (containing texts).
  
 - `fact_correction_{a_set, r_set}.zip`: FaVIQ modified to fact correction task format; containing the instances with keys of input(refuted claim), and output(a list of corrected claims accordingly). We release the resource to aid in future works studying the fact correction, a task recently studied in this [paper](https://arxiv.org/pdf/2012.15788.pdf).
 ## Citation
@@ -76,11 +73,11 @@ In order to obtain the test data, please email Jungsoo Park `jungsoopark.1993@gm
 If you find the <span style="font-variant:small-caps;">FaVIQ</span> dataset useful, please cite our paper:
 
 ```bibtex
-@article{ park2021faviq,
+@inproceedings{ park2021faviq,
     title={ {F}a{VIQ}: Fact Verification from Information seeking Questions },
     author={ Park, Jungsoo and Min, Sewon and Kang, Jaewoo and Zettlemoyer, Luke and Hajishirzi, Hannaneh },
     year={ 2021 },
-    journal={arXiv preprint arXiv:2107.02153}
+    booktitle={ ACL },
 }
 ```
 Please also make sure to credit and cite the creators of AmbigQA and Natural Questions,
