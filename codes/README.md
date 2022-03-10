@@ -29,6 +29,8 @@ the [data.py](https://github.com/faviq/faviq/blob/main/codes/data.py#L116-L125) 
 This code is only for those who will not use our code but want to use our retrieval data.
 
 ```python
+import json
+from tqdm import tqdm
 from utils import DocDB
 
 # top k passages you want to use (up to 100)
@@ -43,15 +45,13 @@ wiki_db_file = "data/wikipedia_20190801.db"
 # - replace `dev.jsonl` to `train.jsonl` or `test.jsonl` for the train/test data instead of the dev data
 retrieval_prediction_file = "data/dpr/faviq_a_set/dev.jsonl"
 
-retrieved_idxs = []
 with open(retrieval_prediction_file, "r") as f:
-    for line in f:
-        retrieved_idxs.append(json.loads(line))
+    retrieved_idxs = json.load(f)
 
 db = DocDB(wiki_db_file)
 
 retrieval_documents = [] # the i-th item of the list contains top-K retrived passages for the i-th claim
-for instance_retrieved_idxs in retrieved_idxs:
+for instance_retrieved_idxs in tqdm(retrieved_idxs):
     instance_retrieval_documents = []
     for topk_passages_pred in instance_retrieved_idxs[:top_k_passages]:
         text = db.get_doc_text(topk_passages_pred)
