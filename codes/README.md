@@ -23,7 +23,7 @@ bash download_wiki.sh
 ```
 
 ## Quick Guideline for using retrieval data
-Once you download the Wikipedia file and TF-IDF/DPR retrieval predictions through `bash download_wiki.sh`, you can use the following code to use retrieved passages for each claim.
+First, download the Wikipedia file and TF-IDF/DPR retrieval predictions through `bash download_wiki.sh`. Then, you can use the following code to use retrieved passages for each claim.
 Note that, if you are using our code, this feature is already incorporated in
 the [data.py](https://github.com/faviq/faviq/blob/main/codes/data.py#L116-L125) so you can skip this part.
 This code is only for those who will not use our code but want to use our retrieval data.
