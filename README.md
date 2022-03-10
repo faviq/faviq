@@ -63,7 +63,7 @@ In order to obtain the test data, please email Jungsoo Park `jungsoopark.1993@gm
 
 - `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with keys of passage id, title, and text. We take the plain text and lists provided by [KILT](https://ai.facebook.com/tools/kilt/) and created a collection of passages where each passage has approximately 100 tokens. Note that for training baselines ([FEVER](https://fever.ai/) and <span style="font-variant:small-caps;">FaVIQ</span>) in the paper, we concatenated the title with the passage and regarded it as the passage.
 
-- `wikipedia_20190801.db`: wikipedia database in sqlite format; containing the passages (~26M) with keys of passage id and values as passages. Note that we concatenated the title with the passage from Wikipedia and use it as the passage.
+- `wikipedia_20190801.db`: wikipedia database in sqlite format; containing the passages (~26M) with keys of passage id and values as titles and passages. You can check out the code snippet for querying documents using SQLite in the [link](https://github.com/faviq/faviq/tree/main/codes).
  
 - `FaVIQ retrieval predictions`: TF-IDF and DPR predictions of FaVIQ dataset. The predictions are retrieved passages' indexes from Wikipedia database (sqlite format).
  
