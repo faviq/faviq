@@ -22,9 +22,6 @@ This will download and unzip files into `./data` directory.
 bash download_wiki.sh
 ```
 
-Note that we concatenated the title with the passage and regarded it as the passage.
-
-
 ## Querying Wikipedia documents database using SQLite
 
 We provide a code snippet for retrieving Wikipedia documents (in text format) using retrieval predictions and Wikipedia database.
