@@ -38,7 +38,17 @@ class DocDB(object):
         result = cursor.fetchone()
         cursor.close()
         return result if result is None else result[0]
-
+    
+    def get_doc_title(self, doc_id):
+        """Fetch the raw text of the doc for 'doc_id'."""
+        cursor = self.connection.cursor()
+        cursor.execute(
+            "SELECT title FROM documents WHERE id = ?",
+            (str(doc_id) if type(doc_id)==int else normalize(doc_id),)
+        )
+        result = cursor.fetchone()
+        cursor.close()
+        return result if result is None else result[0]
 
 def map_fever_label_to_single_token(string):
     if string=='SUPPORTS':
