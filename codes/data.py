@@ -119,6 +119,8 @@ class FVdata(object):
                     instance_retrieved_passages = ''
                     for topk_passages_pred in instance_retrieved_idxs[:self.args.topk_passages]:
                         text = db.get_doc_text(topk_passages_pred)
+                        title = db.get_doc_title(topk_passages_pred)
+                        text = title + ' ' + text
                         if self.args.do_lowercase:
                             text = text.lower()
                         instance_retrieved_passages += ' <SEP> ' + text
