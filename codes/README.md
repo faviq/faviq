@@ -50,7 +50,7 @@ with open(retrieval_prediction_file, "r") as f:
 
 db = DocDB(wiki_db_file)
 
-retrieval_documents = [] # the i-th item of the list contains top-K retrived passages for the i-th question
+retrieval_documents = [] # the i-th item of the list contains top-K retrived passages for the i-th claim
 for instance_retrieved_idxs in retrieved_idxs:
     instance_retrieval_documents = []
     for topk_passages_pred in instance_retrieved_idxs[:top_k_passages]:
