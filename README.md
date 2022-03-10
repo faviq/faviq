@@ -73,7 +73,7 @@ In order to obtain the test data, please email Jungsoo Park `jungsoopark.1993@gm
 If you find the <span style="font-variant:small-caps;">FaVIQ</span> dataset useful, please cite our paper:
 
 ```bibtex
-@inproceedings{ park2021faviq,
+@inproceedings{ park2022faviq,
     title={ {F}a{VIQ}: Fact Verification from Information seeking Questions },
     author={ Park, Jungsoo and Min, Sewon and Kang, Jaewoo and Zettlemoyer, Luke and Hajishirzi, Hannaneh },
     year={ 2022 },
