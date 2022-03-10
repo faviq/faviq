@@ -1,5 +1,5 @@
-# <span style="font-variant:small-caps;">FaVIQ</span> 
-  
+# <span style="font-variant:small-caps;">FaVIQ</span>
+
 This repository contains the data and code for our paper:
 *Jungsoo Park\*, Sewon Min\*, Jaewoo Kang, Luke Zettlemoyer, Hannaneh Hajishirzi. "FaVIQ: FAct Verification from Information seeking Questions".*
 
@@ -7,13 +7,11 @@ This repository contains the data and code for our paper:
 * Checkout the [website](https://faviq.github.io)
 * Read the [paper](https://arxiv.org/pdf/2107.02153.pdf)
 * Download the <span style="font-variant:small-caps;">FaVIQ</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/faviq_a_set_v1.2.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/faviq_r_set_v1.2.zip)
-* Download the [wikipedia dump file (2019.08.01)](https://nlp.cs.washington.edu/ambigqa/data/wikipedia_20190801.jsonl)
-* Download the [wikipedia dump file (2019.08.01) in sqlite DB format](https://drive.google.com/file/d/1Byb8hCTm5ZhDh5xs2wKd0gsE978tS3_o/view?usp=sharing)
-* Download the <span style="font-variant:small-caps;">FaVIQ retrieval predictions</span>: [TF_IDF](https://drive.google.com/file/d/1tZrj0y-0FS6T7o4oLfBk8K-Bt_ZUvzTz/view?usp=sharing) / [DPR](https://drive.google.com/file/d/1_h3OpuqvUVEuadH2F0my7W6nJfjXK4vy/view?usp=sharing)
+* Download the <span style="font-variant:small-caps;">top-100 FaVIQ retrieval predictions from TF-IDF/DPR</span>: see [codes/README](codes/README#quick-guideline-for-using-retrieval-data).
 * Download the <span style="font-variant:small-caps;">FaVIQ in fact correction task format</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_a_set.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_r_set.zip)
 
-**Update (Fev 2022)**: Our paper got accepted to the ACL 2022 main conference.  
-**Update (Nov 2021)**: We updated the positive/negative silver evidence for the refute samples. 
+**Update (Fev 2022)**: Our paper got accepted to the ACL 2022 main conference.
+**Update (Nov 2021)**: We updated the positive/negative silver evidence for the refute samples.
 
 ## Dataset
 
@@ -64,9 +62,9 @@ In order to obtain the test data, please email Jungsoo Park `jungsoopark.1993@gm
 - `wikipedia_20190801.jsonl`: wikipedia database in jsonl format; containing the passages (~26M) with keys of passage id, title, and text. We take the plain text and lists provided by [KILT](https://ai.facebook.com/tools/kilt/) and created a collection of passages where each passage has approximately 100 tokens. Note that for training baselines ([FEVER](https://fever.ai/) and <span style="font-variant:small-caps;">FaVIQ</span>) in the paper, we concatenated the title with the passage and regarded it as the passage.
 
 - `wikipedia_20190801.db`: wikipedia database in sqlite format; containing the passages (~26M) with keys of passage id and values as title and passage. You can check out the code snippet for querying documents using SQLite in the [link](https://github.com/faviq/faviq/tree/main/codes).
- 
+
 - `FaVIQ retrieval predictions`: TF-IDF and DPR predictions of FaVIQ dataset. The predictions are retrieved passages' indexes from Wikipedia database (sqlite format).
- 
+
 - `fact_correction_{a_set, r_set}.zip`: FaVIQ modified to fact correction task format; containing the instances with keys of input(refuted claim), and output(a list of corrected claims accordingly). We release the resource to aid in future works studying the fact correction, a task recently studied in this [paper](https://arxiv.org/pdf/2012.15788.pdf).
 ## Citation
 
