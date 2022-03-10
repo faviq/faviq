@@ -46,7 +46,8 @@ for instance_retrieved_idxs in retrieved_idxs:
     instance_retrieval_documents = []
     for topk_passages_pred in instance_retrieved_idxs[:top_k_passages]:
         text = db.get_doc_text(topk_passages_pred)
-        instance_retrieval_documents.append(text)
+	title = db.get_doc_title(topk_passages_pred)
+        instance_retrieval_documents.append({'title':title, 'passage':text})
     retrieval_documents.append(instance_retrieval_documents)
 ```
 
