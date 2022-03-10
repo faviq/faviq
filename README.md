@@ -7,7 +7,7 @@ This repository contains the data and code for our paper:
 * Checkout the [website](https://faviq.github.io)
 * Read the [paper](https://arxiv.org/pdf/2107.02153.pdf)
 * Download the <span style="font-variant:small-caps;">FaVIQ</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/faviq_a_set_v1.2.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/faviq_r_set_v1.2.zip)
-* Download the <span style="font-variant:small-caps;">top-100 FaVIQ retrieval predictions from TF-IDF/DPR</span>: see [codes/README](codes/README#quick-guideline-for-using-retrieval-data).
+* Download the <span style="font-variant:small-caps;">top-100 FaVIQ retrieval predictions from TF-IDF/DPR</span>: see [codes/README](codes/#quick-guideline-for-using-retrieval-data).
 * Download the <span style="font-variant:small-caps;">FaVIQ in fact correction task format</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_a_set.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_r_set.zip)
 
 **Update (Fev 2022)**: Our paper got accepted to the ACL 2022 main conference.
