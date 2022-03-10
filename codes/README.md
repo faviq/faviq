@@ -114,7 +114,7 @@ CUDA_VISIBLE_DEVICES=${CUDA} python cli.py \
 
 ## Citations
 ```bibtex
-@inproceedings{ park2021faviq,
+@inproceedings{ park2022faviq,
     title={ {F}a{VIQ}: Fact Verification from Information seeking Questions },
     author={ Park, Jungsoo and Min, Sewon and Kang, Jaewoo and Zettlemoyer, Luke and Hajishirzi, Hannaneh },
     year={ 2022 },
