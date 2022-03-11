@@ -1,6 +1,6 @@
-@article{ park2021faviq,
+@inproceedings{ park2022faviq,
     title={ {F}a{VIQ}: Fact Verification from Information seeking Questions },
     author={ Park, Jungsoo and Min, Sewon and Kang, Jaewoo and Zettlemoyer, Luke and Hajishirzi, Hannaneh },
-    year={ 2021 },
-    journal={ arXiv preprint arXiv:2107.02153 }
+    year={ 2022 },
+    booktitle={ ACL },
 }
