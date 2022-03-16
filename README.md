@@ -10,7 +10,7 @@ This repository contains the data and code for our paper:
 * Download the <span style="font-variant:small-caps;">top-100 FaVIQ retrieval predictions from TF-IDF/DPR</span>: see [codes/README](codes/#quick-guideline-for-using-retrieval-data).
 * Download the <span style="font-variant:small-caps;">FaVIQ in fact correction task format</span>: [A set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_a_set.zip) / [R set](https://nlp.cs.washington.edu/ambigqa/data/fact_correction_r_set.zip)
 
-**Update (Fev 2022)**: Our paper got accepted to the ACL 2022 main conference.
+**Update (Fev 2022)**: Our paper got accepted to the ACL 2022 main conference.  
 **Update (Nov 2021)**: We updated the positive/negative silver evidence for the refute samples.
 
 ## Dataset
